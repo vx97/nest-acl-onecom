@@ -9,7 +9,7 @@ import { Module } from '@nestjs/common';
     JwtModule.register({
       global: true,
       secret: 'onedotcom',
-      signOptions: { expiresIn: '60s' },
+      signOptions: { expiresIn: '6000000s' },
     }),
   ],
   controllers: [AuthController],

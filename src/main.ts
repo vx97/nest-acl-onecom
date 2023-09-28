@@ -7,6 +7,7 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('One.com')
+    .addBearerAuth()
     .setDescription('Nest JS ACL API documentation')
     .setVersion('1.0')
     .build();
