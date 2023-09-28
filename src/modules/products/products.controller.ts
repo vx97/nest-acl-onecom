@@ -23,7 +23,7 @@ export class ProductsController {
   constructor(private productsService: ProductsService) {}
 
   //Need to change logic to check against role instead on permissions
-  @Permissions(Permission.CREATE, Permission.UPDATE)
+
   @Get()
   async getProduct() {
     try {
@@ -33,7 +33,6 @@ export class ProductsController {
     }
   }
 
-  @Permissions(Permission.CREATE, Permission.UPDATE)
   @Post()
   async createProduct() {
     try {
@@ -43,8 +42,6 @@ export class ProductsController {
     }
   }
 
-  @Permissions(Permission.CREATE, Permission.UPDATE)
-  @Permissions(Permission.CREATE, Permission.UPDATE)
   @Patch()
   async updateProduct() {
     try {
@@ -64,7 +61,6 @@ export class ProductsController {
     }
   }
 
-  @Permissions(Permission.CREATE, Permission.UPDATE)
   @Delete()
   async deleteProduct() {
     try {
